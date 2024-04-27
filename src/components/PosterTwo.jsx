@@ -36,9 +36,9 @@ const PosterTwo = () => {
         initial={{ y: 30, opacity: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         animate={animation}
-        className="w-32 h-8 bg-[#866CA0] bg-opacity-30 flex justify-center items-center rounded-2xl mx-5 sm:w-36 sm:h-10 md:w-28 md:h-7"
+        className="w-32 h-10 bg-[#866CA0] bg-opacity-30 flex justify-center items-center rounded-2xl mx-5 sm:w-36 sm:h-10 md:w-28 md:h-7 xl:mt-20"
       >
-        <h3 className="text-[#866CA0] font-morabba font-bold text-sm sm:text-base md:text-xs">
+        <h3 className="text-[#866CA0] font-morabba font-bold text-sm sm:text-base md:text-xs xl:h-10 xl:mt-5">
           بیشتر درباره ما بدانید
         </h3>
       </motion.div>
@@ -49,7 +49,7 @@ const PosterTwo = () => {
           initial={{ y: 30, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
           animate={animation}
-          className="font-morabba font-bold text-[#00194C] opacity-75 text-2xl text-end sm:text-3xl md:opacity-85 1100:text-4xl"
+          className="font-morabba font-bold text-[#00194C] opacity-75 text-2xl text-end sm:text-3xl md:opacity-85 1100:text-4xl xl:mt-5 xl:w-11/12 xl:ml-auto"
         >
           بهترین زیرساخت و پیاده سازی برای داشتن بالاترین رتبه
         </motion.h2>
@@ -57,7 +57,7 @@ const PosterTwo = () => {
           initial={{ y: 30, opacity: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
           animate={animation}
-          className="text-end font-sans opacity-95 mt-5 text-sm sm:text-base md:text-sm 1100:text-base"
+          className="text-end font-sans opacity-95 mt-5 text-sm sm:text-base md:text-sm 1100:text-base xl:w-11/12 ml-auto xl:mt-8 1400:w-10/12"
         >
           شما در کنار ما می توانید تجربه کسب و کار آنلاین را داشته باشید و به
           بزرگترین مارکت دنیا با ۶۴ میلیون کاربر ایرانی دسترسی داشته باشید. فقط
@@ -68,7 +68,7 @@ const PosterTwo = () => {
 
       {/* history */}
       {window.innerWidth >= "768" && (
-        <div className="w-80 h-16 mr-5 mt-5 flex justify-around items-center gap-4">
+        <div className="w-80 h-16 mr-5 mt-5 flex justify-around items-center gap-4 xl:mt-10">
           <motion.div
             initial={{ y: 30, opacity: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}
@@ -126,7 +126,7 @@ const PosterTwo = () => {
           animate={animation}
           src={require("../assets/posterTwo.png")}
           alt="USEO"
-          className="absolute -top-12 left-8 w-10/12 900:w-9/12 900:left-14"
+          className="absolute -top-12 left-8 w-10/12 900:w-9/12 900:left-14 xl:w-8/12 xl:left-28 xl:-top-0"
         />
 
         {/* comunication icon */}
@@ -134,13 +134,13 @@ const PosterTwo = () => {
           initial={{ y: 30, opacity: 0 }}
           transition={{ duration: 0.6, delay: 2.6 }}
           animate={animation}
-          className="w-12 h-12 bg-white rounded-2xl shadow-md absolute top-32 right-1 flex justify-center items-center 425:top-44 425:right-5 md:top-40 900:right-10 900:top-36"
+          className="w-12 h-12 bg-white rounded-2xl shadow-md absolute top-32 right-1 flex justify-center items-center 425:top-44 425:right-5 md:top-40 900:right-10 900:top-36 xl:top-52 xl:right-14 xl:w-14 xl:h-14"
         >
           <div className="w-8 h-8 bg-white rounded-full shadow-md flex justify-center items-center">
             <img
               src={require("../assets/comunication icon.png")}
               alt="USEO"
-              className="w-8/12"
+              className="w-8/12 xl:w-11/12"
             />
           </div>
         </motion.div>
@@ -150,7 +150,7 @@ const PosterTwo = () => {
           initial={{ y: 30, opacity: 0 }}
           transition={{ duration: 0.6, delay: 2.6 }}
           animate={animation}
-          className="w-14 h-14 rounded-2xl shadow-md absolute -top-4 left-8 -rotate-12 bg-white flex justify-center items-center md:top-0 900:top- 900:left-16"
+          className="w-14 h-14 rounded-2xl shadow-md absolute -top-4 left-8 -rotate-12 bg-white flex justify-center items-center md:top-0 900:left-16 xl:top-16 xl:left-28"
         >
           <div className="w-10 h-10 bg-white rounded-full shadow-md flex justify-center items-center">
             <img
@@ -167,7 +167,7 @@ const PosterTwo = () => {
           initial={{ y: 30, opacity: 0 }}
           transition={{ duration: 0.6, delay: 2.6}}
           animate={animation}
-          className="w-3 h-3 bg-[#8C7AFF] rounded-full absolute bottom-1 right-4"
+          className="w-3 h-3 bg-[#8C7AFF] rounded-full absolute bottom-1 right-4 xl:bottom-10"
         ></motion.div>
       </div>
     </div>

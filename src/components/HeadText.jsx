@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const HeadText = () => {
   return (
-    <div className="w-full h-[400px] flex flex-col items-end px-9 mt-5 520:mt-10 sm:mt-36 sm:h-[280px] md:mt-[150px] md:h-[400px] lg:w-[500px] lg:mr-10 1100:w-[600px] xl:mr-24">
+    <div className="w-full h-[400px] flex flex-col items-end px-9 mt-5 520:mt-10 sm:mt-36 sm:h-[280px] md:mt-[150px] md:h-[400px] lg:w-[500px] lg:mr-10 1100:w-[600px] xl:mr-24 1400:mr-28 1400:h-[430px]">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

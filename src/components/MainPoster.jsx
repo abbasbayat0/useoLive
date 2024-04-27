@@ -13,7 +13,7 @@ const MainPoster = () => {
     <div className="relative w-screen h-[350px] mt-10 flex justify-center items-center overflow-x-hidden 425:h-[420px] 520:h-[540px] sm:h-[630px] md:w-1/2 md:h-[400px] 900:h-[450px] lg:h-[550px] xl:h-[700px] 1400:h-[800px]">
       {/* poster */}
       <div className="w-full">
-        <img src={require("../assets/posterOne.png")} alt="USEO" />
+        <img src={require("../assets/posterOne.png")} alt="USEO" className="xl:w-10/12 xl:ml-10" />
       </div>
 
       {/* star */}
