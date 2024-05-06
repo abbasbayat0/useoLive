@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // change mobile navbar status
@@ -43,41 +44,41 @@ const Navbar = () => {
       >
         {/* USEO logo */}
         <div className="sm:mt-3 sm:ml-2 md:mt-2 lg:mt-3 lg:ml-5">
-          <a href="https://useo.ir/" className="cursor-pointer">
+          <Link to="/useoLive" className="cursor-pointer">
             <img
               src={require("../assets/USEO address.png")}
               alt="USEO"
               className="sm:w-[170px] md:w-[170px] lg:w-8/12"
             />
-          </a>
+          </Link>
         </div>
 
         {/* nav Links */}
         <ul className="flex flex-col gap-10 text-center font-sans text-2xl sm:flex-row-reverse sm:text-nowrap sm:text-sm sm:mt-5 sm:mr-2 sm:gap-7 md:gap-4 md:mt-4 md:-ml-10 md:text-xs lg:text-sm lg:mt-5 lg:gap-10">
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link to="/projects" className="cursor-pointer">
               نمونه کارها
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link to="/projects" className="cursor-pointer">
               پلن قیمت
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link to="/projects" className="cursor-pointer">
               خدمات یوسئو
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link to="/projects" className="cursor-pointer">
               سایر
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="cursor-pointer">
+            <Link to="/projects" className="cursor-pointer">
               وبلاگ
-            </a>
+            </Link>
           </li>
         </ul>
 

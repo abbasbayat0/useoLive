@@ -1,11 +1,8 @@
-import MainPoster from "./components/MainPoster";
-import MainPosterDesc from "./components/MainPosterDesc";
-import PosterTwo from "./components/PosterTwo";
-import Navbar from "./components/Navbar";
-import StarSections from "./components/StarSections";
-import Header from "./components/Header"
-import Main from "./components/Main"
-import Footer from "./components/Footer"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import NotFound from "./pages/NotFound";
+import SinglePorject from "./pages/SingleProject";
 
 function App() {
   // scroll to top after each refresh
@@ -14,10 +11,16 @@ function App() {
   };
   return (
     <div className="w-screen">
-      <Navbar />
-      <Header />
-      <Main />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/useoLive" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/fitFarma" element={<SinglePorject />} />
+
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
