@@ -1,6 +1,7 @@
 import React from "react";
 import { information } from "../informations";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const AllProjects = () => {
   const example = information.examples[1];
@@ -9,35 +10,61 @@ const AllProjects = () => {
     <div className="w-full mt-24 px-2 flex flex-col justify-center sm:mt-28">
       <div className="flex flex-col sm:flex-row-reverse justify-around">
         {/* logo & title */}
-        <div className="flex flex-col gap-2 justify-center items-center sm:flex-row-reverse">
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="flex flex-col gap-2 justify-center items-center sm:flex-row-reverse"
+        >
           <div className="rounded-2xl w-10 h-10 bg-green-400 bg-opacity-40 flex justify-center items-center">
             <img src={require("../assets/projects.png")} alt="USEO" />
           </div>
           <h1 className="font-morabba text-xl tracking-wide font-bold opacity-90 lg:text-2xl">
             پروژه های اجرایی تیم یوسئو
           </h1>
-        </div>
+        </motion.div>
 
         {/* filters */}
         <div className="flex flex-col gap-5 justify-center items-center mt-10 sm:mt-0 sm:gap-1 sm:flex-row-reverse">
-          <div className="rounded-xl border-2 py-2 px-5 sm:px-2 sm:py-1 sm:text-xs font-iranYekan bg-[#866CA0] bg-opacity-90 text-white text-nowrap lg:text-base lg:py-2 lg:px-5">
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            whileHover={{ opacity: 1, scale: 1.1 }}
+            className="rounded-xl border-2 py-2 px-5 sm:px-2 sm:py-1 sm:text-xs font-iranYekan bg-[#866CA0] bg-opacity-90 text-white opacity-90 text-nowrap lg:text-base lg:py-2 lg:px-5 cursor-pointer"
+          >
             UI طراحی
-          </div>
-          <div className="rounded-xl border-2 py-2 px-5 sm:px-2 sm:py-1 sm:text-xs font-iranYekan text-nowrap lg:text-base lg:py-2 lg:px-5">
+          </motion.div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            whileHover={{ opacity: 1, scale: 1.1 }}
+            className="rounded-xl border-2 py-2 px-5 sm:px-2 sm:py-1 sm:text-xs font-iranYekan text-nowrap lg:text-base lg:py-2 lg:px-5 opacity-90 cursor-pointer"
+          >
             طراحی های وردپرس
-          </div>
-          <div className="rounded-xl border-2 py-2 px-5 sm:px-2 sm:py-1 sm:text-xs font-iranYekan text-nowrap lg:text-base lg:py-2 lg:px-5">
+          </motion.div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1.1 }}
+            whileHover={{ opacity: 1, scale: 1.1 }}
+            className="rounded-xl border-2 py-2 px-5 sm:px-2 sm:py-1 sm:text-xs font-iranYekan text-nowrap lg:text-base lg:py-2 lg:px-5 opacity-90 cursor-pointer"
+          >
             طراحی کدنویسی
-          </div>
+          </motion.div>
         </div>
       </div>
 
       {/* all projects */}
       <div className="w-full mt-5 flex flex-col gap-5 sm:flex-row flex-wrap sm:justify-around md:gap-0 1400:mt-20">
-        {count.map((count) => {
+        {count.map((count, index) => {
           return (
-            <div
-              className="w-full h-[400px] flex justify-center items-center relative sm:w-[40%] sm:mt-5 md:w-[33%] xl:mt-14"
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1 + index * 0.5, delay: 1.5 }}
+              className="w-full h-[400px] flex justify-center items-center relative sm:w-[40%] sm:mt-5 md:w-[33%] xl:mt-14 xl:w-[25%] 2xl:w-[20%]"
               key={count}
             >
               <div className="h-[350px] w-[240px] bg-white rounded-2xl flex justify-center items-center relative border-2 shadow-lg sm:h-[400px] sm:w-[250px] lg:w-[300px] xl:w-[320px] xl:h-[420px]">
@@ -65,12 +92,17 @@ const AllProjects = () => {
 
                 {/* go to website */}
                 <div className="w-full h-10 flex justify-center items-center absolute top-[290px] sm:top-[350px] xl:top-[360px]">
-                  <Link to="/projects/fitFarma" className="border-2 rounded-md w-32 h-8 flex justify-center items-center text-xs font-iranYekan tracking-wide opacity-70 sm:text-sm sm:opacity-80">
-                    مشاهده جزئیات
+                  <Link
+                    to="/projects/fitFarma"
+                    className="border-2 rounded-md w-32 h-8 flex justify-center items-center text-xs font-iranYekan tracking-wide opacity-70 sm:text-sm sm:opacity-80"
+                  >
+                    <motion.p whileHover={{ scale: 1.1, color: "black" }}>
+                      مشاهده جزئیات
+                    </motion.p>
                   </Link>
                 </div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>

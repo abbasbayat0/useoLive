@@ -109,7 +109,7 @@ const PosterTwo = () => {
       )}
 
       {/* main poster two */}
-      <div className="w-full mt-16 relative md:w-1/2 md:absolute md:top-0 md:-left-5 xl:ml-5">
+      <div className="w-full mt-16 relative md:w-1/2 md:absolute md:bottom-10 810:bottom-5 900:-bottom-10 lg:-bottom-14 1100:-bottom-16 xl:-bottom-32 md:-left-5 1400:-bottom-44 xl:ml-5 2xl:-bottom-36 2xl:w-[45%] 2xl:ml-14 1800:w-[40%]">
         {/* background dots */}
         <motion.img
           initial={{ y: 30, opacity: 0 }}
