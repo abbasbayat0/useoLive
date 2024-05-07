@@ -63,8 +63,8 @@ const SinglePorject = () => {
         </div>
 
         {/* similar projects */}
-        <div className="flex flex-col justify-center items-center mt-10">
-          <div className="flex flex-col justify-center items-center md:w-full md:flex-row-reverse md:gap-3 md:justify-start">
+        <div className="flex flex-col justify-center items-center mt-24">
+          <div className="flex flex-col justify-center items-center md:w-11/12 md:flex-row-reverse md:gap-3 md:justify-start">
             <img src={require("../assets/taaj.png")} alt="USEO" className="w-12" />
             <p className="font-morabba font-bold">نمونه کار های مشابه</p>
           </div>
