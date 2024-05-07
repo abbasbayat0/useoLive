@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
 import SinglePorject from "./pages/SingleProject";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   // scroll to top after each refresh
@@ -12,6 +14,7 @@ function App() {
   return (
     <div className="w-screen">
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/useoLive" element={<Home />} />
@@ -20,6 +23,7 @@ function App() {
 
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
