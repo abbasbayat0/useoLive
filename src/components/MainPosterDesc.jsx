@@ -23,7 +23,7 @@ const MainPosterDesc = () => {
           initial={{ y: 30, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           animate={animation}
-          className="font-morabba text-2xl opacity-70 font-bold text-end md:text-[#866ca0] md:opacity-95 900:text-3xl 1400:text-4xl"
+          className="font-morabba text-2xl opacity-70 font-bold text-end 375:mt-5 md:text-[#866ca0] md:opacity-95 900:text-3xl 1400:text-4xl"
         >
           پیاده سازی و طراحی وبسایت با استاندارد های روز دنیا
         </motion.h2>
