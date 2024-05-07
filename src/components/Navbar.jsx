@@ -43,7 +43,10 @@ const Navbar = () => {
         }`}
       >
         {/* USEO logo */}
-        <div className="sm:mt-3 sm:ml-2 md:mt-2 lg:mt-3 lg:ml-5">
+        <div
+          onClick={() => changeNavStatus(false)}
+          className="sm:mt-3 sm:ml-2 md:mt-2 lg:mt-3 lg:ml-5"
+        >
           <Link to="/useoLive" className="cursor-pointer">
             <img
               src={require("../assets/USEO address.png")}
@@ -55,27 +58,27 @@ const Navbar = () => {
 
         {/* nav Links */}
         <ul className="flex flex-col gap-10 text-center font-sans text-2xl sm:flex-row-reverse sm:text-nowrap sm:text-sm sm:mt-5 sm:mr-2 sm:gap-7 md:gap-4 md:mt-4 md:-ml-10 md:text-xs lg:text-sm lg:mt-5 lg:gap-10">
-          <li>
+          <li onClick={() => changeNavStatus(false)}>
             <Link to="/projects" className="cursor-pointer">
               نمونه کارها
             </Link>
           </li>
-          <li>
+          <li onClick={() => changeNavStatus(false)}>
             <Link to="/projects" className="cursor-pointer">
               پلن قیمت
             </Link>
           </li>
-          <li>
+          <li onClick={() => changeNavStatus(false)}>
             <Link to="/projects" className="cursor-pointer">
               خدمات یوسئو
             </Link>
           </li>
-          <li>
+          <li onClick={() => changeNavStatus(false)}>
             <Link to="/projects" className="cursor-pointer">
               سایر
             </Link>
           </li>
-          <li>
+          <li onClick={() => changeNavStatus(false)}>
             <Link to="/projects" className="cursor-pointer">
               وبلاگ
             </Link>

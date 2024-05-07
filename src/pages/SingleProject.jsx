@@ -8,6 +8,11 @@ const SinglePorject = () => {
   useEffect(() => {
     if (view) animation.start({ y: 0, opacity: 1 });
   }, [view]);
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 800);
+  }, []);
 
   return (
     <div>
