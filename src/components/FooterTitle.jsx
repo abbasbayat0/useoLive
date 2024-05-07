@@ -5,7 +5,9 @@ const FooterTitle = () => {
   const ref = useRef();
   const view = useInView(ref, { once: true });
   const animation = useAnimation();
-  const viewHeight = window.location.href === "http://localhost:3000/useoLive";
+  const viewHeight =
+    window.location.href === "http://localhost:3000/useoLive/" ||
+    "https://abbasbayat0.github.io/useoLive" || "https://abbasbayat0.github.io/useoLive/";
 
   useEffect(() => {
     if (view) animation.start({ y: 0, x: 0, opacity: 1 });
