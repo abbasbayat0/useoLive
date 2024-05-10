@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const HiddenLogo = () => {
   return (
-    <div className="w-full absolute hidden top-10 right-2 sm:flex justify-end items-center lg:top-16 lg:right-3">
+    <div className="w-full absolute hidden top-10 right-2 sm:flex justify-end items-start lg:top-16 lg:right-3">
       <img
         src={require("../assets/hiddenLogo.png")}
         alt="USEO"
