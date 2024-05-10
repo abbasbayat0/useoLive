@@ -104,4 +104,57 @@ const content = [
   ],
 ];
 
-export const information = { options, examples, sections, services, content };
+// AllProjects.jsx
+const projects = [
+  {
+    image: require("./assets/exampleTwo.png"),
+    show: "همه وردپرس",
+    createdBy: "وردپرس",
+    title: "فیت فارما",
+    description: "طراحی گرافیک اختصاصی داروخانه فیت فارما",
+  },
+  {
+    image: require("./assets/exampleTwo.png"),
+    show: "همه وردپرس",
+    createdBy: "وردپرس",
+    title: "فیت فارما",
+    description: "طراحی گرافیک اختصاصی داروخانه فیت فارما",
+  },
+  {
+    image: require("./assets/exampleTwo.png"),
+    show: "همه کدنویسی",
+    createdBy: "طراحی کدنویسی",
+    title: "فیت فارما",
+    description: "طراحی گرافیک اختصاصی داروخانه فیت فارما",
+  },
+  {
+    image: require("./assets/exampleTwo.png"),
+    show: "همه کدنویسی",
+    createdBy: "طراحی کدنویسی",
+    title: "فیت فارما",
+    description: "طراحی گرافیک اختصاصی داروخانه فیت فارما",
+  },
+  {
+    image: require("./assets/exampleTwo.png"),
+    show: "همه UI طراحی",
+    createdBy: "UI طراحی",
+    title: "فیت فارما",
+    description: "طراحی گرافیک اختصاصی داروخانه فیت فارما",
+  },
+  {
+    image: require("./assets/exampleTwo.png"),
+    show: "همه UI طراحی",
+    createdBy: "UI طراحی",
+    title: "فیت فارما",
+    description: "طراحی گرافیک اختصاصی داروخانه فیت فارما",
+  },
+];
+
+export const information = {
+  options,
+  examples,
+  sections,
+  services,
+  content,
+  projects,
+};
