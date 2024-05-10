@@ -36,7 +36,7 @@ const MainPoster = () => {
         initial={{ y: 30, opacity: 0 }}
         transition={{ duration: 0.6, delay: 1.2 }}
         animate={animation}
-        className="absolute w-14 h-14 bg-white bg-opacity-50 rounded-full top-44 right-7 flex justify-center items-center md:top-52 md:right-12 lg:top-72 lg:right-16 xl:right-16 xl:top-80 xl:w-20 xl:h-20"
+        className="absolute w-14 h-14 bg-white bg-opacity-50 rounded-full top-44 right-7 flex justify-center items-center md:top-52 md:right-0 lg:top-72 lg:right-16 xl:right-20 xl:top-80 xl:w-20 xl:h-20"
       >
         <div className="w-10 h-10 bg-white rounded-full xl:w-16 xl:h-16">
           <a href="https://useo.ir/">

@@ -16,7 +16,7 @@ const UseoServices = () => {
   return (
     <div
       ref={ref}
-      className="w-screen overflow-hidden mt-14 h-[1300px] relative 425:h-[1340px] sm:h-[1450px] md:mt-0 md:h-[520px]"
+      className="w-full overflow-hidden mt-14 h-[1300px] relative 425:h-[1340px] sm:h-[1450px] md:mt-0 md:h-[520px]"
     >
       {/* dots background */}
       <img

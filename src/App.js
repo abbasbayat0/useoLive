@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div className="w-screen">
+    <div className="max-w-[1536px] flex justify-center items-center flex-col relative">
         <Navbar />
         <AnimatePresence>
             <Routes location={location} key={location.key}>

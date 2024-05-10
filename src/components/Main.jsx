@@ -7,7 +7,7 @@ import Slider from './Slider'
 
 const Main = () => {
   return (
-    <main className="w-screen bg-gradient-to-t from-white">
+    <main className="w-full bg-gradient-to-t from-white">
         <StarSections />
 
         {/* the first main poster and its descriptions */}

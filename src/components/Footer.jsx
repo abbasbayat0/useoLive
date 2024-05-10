@@ -4,7 +4,7 @@ import TheEndOfFooter from './TheEndOfFooter'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='w-full'>
         <FooterTitle />
         <FooterContent />
         <TheEndOfFooter />

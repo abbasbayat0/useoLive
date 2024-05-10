@@ -64,7 +64,7 @@ const AllProjects = () => {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 + index * 0.5, delay: 1.5 }}
-              className="w-full h-[400px] flex justify-center items-center relative sm:w-[40%] sm:mt-5 md:w-[33%] xl:mt-14 xl:w-[25%] 2xl:w-[20%]"
+              className="w-full h-[400px] flex justify-center items-center relative sm:w-[40%] sm:mt-5 md:w-[33%] xl:mt-14 xl:w-[25%]"
               key={count}
             >
               <div className="h-[350px] w-[240px] bg-white rounded-2xl flex justify-center items-center relative border-2 shadow-lg sm:h-[400px] sm:w-[250px] lg:w-[300px] xl:w-[320px] xl:h-[420px]">

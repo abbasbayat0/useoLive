@@ -9,7 +9,7 @@ const Header = () => {
         initial={{ y: -600 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8 }}
-        className="w-screen overflow-hidden rounded-b-[60px] shadow-2xl shadow-gray-200 md:flex sm:rounded-b-[100px]"
+        className="w-full overflow-hidden relative rounded-b-[60px] shadow-2xl shadow-gray-200 md:flex sm:rounded-b-[100px]"
       >
         <HeadPicture />
         <HeadText />

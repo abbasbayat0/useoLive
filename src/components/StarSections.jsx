@@ -14,7 +14,7 @@ const StarSections = () => {
   }, [view]);
 
   return (
-    <div className="w-screen flex justify-center items-center flex-col gap-14 -mt-8 375:-mt-28 425:-mt-24 520:-mt-36 sm:-mt-16 md:gap-5 md:-mt-28 md:flex-row md:px-5 1100:-mt-12 xl:-mt-5">
+    <div className="w-full flex justify-center items-center flex-col gap-14 -mt-8 375:-mt-28 425:-mt-24 520:-mt-36 sm:-mt-16 md:gap-5 md:-mt-28 md:flex-row md:px-5 1100:-mt-12 xl:-mt-5">
       {sections.map((section, index) => {
         return (
           <div

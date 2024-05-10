@@ -13,6 +13,7 @@ const Home = () => {
     <motion.div
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: easeIn }}
+      className="flex flex-col justify-center items-center"
     >
       <Header />
       <Main />
