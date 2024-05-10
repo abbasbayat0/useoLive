@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Main from "../components/Main";
-import { easeIn, easeOut, motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 
 const Home = () => {
   useEffect(() => {

@@ -31,7 +31,7 @@ const AllProjects = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
+            transition={{ duration: 1, delay: 3 }}
             onClick={() => {
               changeFilter("همه");
               changeActive(0);
@@ -47,7 +47,7 @@ const AllProjects = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.5 }}
+            transition={{ duration: 1, delay: 3.2 }}
             onClick={() => {
               changeFilter("UI طراحی");
               changeActive(1);
@@ -63,7 +63,7 @@ const AllProjects = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.8 }}
+            transition={{ duration: 1, delay: 3.4 }}
             onClick={() => {
               changeFilter("وردپرس");
               changeActive(2);
@@ -79,7 +79,7 @@ const AllProjects = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 2 }}
+            transition={{ duration: 1, delay: 3.6 }}
             onClick={() => {
               changeFilter("کدنویسی");
               changeActive(3);
@@ -102,7 +102,7 @@ const AllProjects = () => {
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5 + index * 0.1, delay: 0.5 }}
+              transition={{ duration: .8 + index * 0.5, delay: 1.5 }}
               className="w-full h-[400px] flex justify-center items-center relative sm:w-[40%] sm:mt-5 md:w-[33%] xl:mt-14 xl:w-[25%]"
               key={index}
             >

@@ -14,7 +14,7 @@ const Navbar = () => {
     >
       {/* navbar icon */}
       <div
-        className="w-8 h-7 z-20 sm:hidden mt-5 mr-2 absolute"
+        className="w-8 h-7 z-30 sm:hidden mt-5 mr-2 absolute"
         onClick={() => changeNavStatus(!navStatus)}
       >
         <div
