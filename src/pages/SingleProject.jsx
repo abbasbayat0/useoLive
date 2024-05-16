@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation, useInView, easeIn } from "framer-motion";
 
 const SinglePorject = () => {
   const ref = useRef();
@@ -15,7 +15,10 @@ const SinglePorject = () => {
   }, []);
 
   return (
-    <div>
+    <motion.div
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.8, ease: easeIn }}
+    >
       <div className="w-full mt-20 px-2 flex flex-col justify-center sm:mt-24 md:mt-10 overflow-x-hidden">
         {/* poster & descriptions */}
         <div className="flex justify-center items-center flex-col md:flex-row-reverse">
@@ -199,7 +202,7 @@ const SinglePorject = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
