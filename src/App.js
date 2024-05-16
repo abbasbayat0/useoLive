@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="max-w-[1536px] flex justify-center items-center flex-col relative">
         <Navbar />
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
             <Routes location={location} key={location.key}>
               <Route path="/" element={<Home />} />
               <Route path="/useoLive" element={<Home />} />
