@@ -134,7 +134,7 @@ const AllProjects = () => {
                 {/* go to website */}
                 <div className="w-full h-10 flex justify-center items-center absolute top-[290px] sm:top-[350px] xl:top-[360px]">
                   <Link
-                    to="/projects/fitFarma"
+                    to="/useoLive/projects/fitFarma"
                     className="border-2 rounded-md w-32 h-8 flex justify-center items-center text-xs font-iranYekan tracking-wide opacity-70 sm:text-sm sm:opacity-80"
                   >
                     <motion.p whileHover={{ scale: 1.1, color: "black" }}>

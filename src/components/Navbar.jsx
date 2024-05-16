@@ -59,27 +59,27 @@ const Navbar = () => {
         {/* nav Links */}
         <ul className="absolute top-44 flex flex-col gap-10 text-center font-sans text-2xl sm:static sm:flex-row-reverse sm:text-nowrap sm:text-sm sm:mt-5 sm:mr-2 sm:gap-7 md:gap-4 md:mt-4 md:-ml-10 md:text-xs lg:text-sm lg:mt-5 lg:gap-10">
           <li onClick={() => changeNavStatus(false)}>
-            <Link to="/projects" className="cursor-pointer">
+            <Link to="/useoLive/projects" className="cursor-pointer">
               نمونه کارها
             </Link>
           </li>
           <li onClick={() => changeNavStatus(false)}>
-            <Link to="/projects" className="cursor-pointer">
+            <Link to="/useoLive/projects" className="cursor-pointer">
               پلن قیمت
             </Link>
           </li>
           <li onClick={() => changeNavStatus(false)}>
-            <Link to="/projects" className="cursor-pointer">
+            <Link to="/useoLive/projects" className="cursor-pointer">
               خدمات یوسئو
             </Link>
           </li>
           <li onClick={() => changeNavStatus(false)}>
-            <Link to="/projects" className="cursor-pointer">
+            <Link to="/useoLive/projects" className="cursor-pointer">
               وبلاگ
             </Link>
           </li>
           <li onClick={() => changeNavStatus(false)}>
-            <Link to="/contact" className="cursor-pointer">
+            <Link to="/useoLive/contact" className="cursor-pointer">
               تماس با ما
             </Link>
           </li>

@@ -27,11 +27,11 @@ function App() {
             <Routes location={location} key={location.key}>
               <Route path="/" element={<Home />} />
               <Route path="/useoLive" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/projects/fitFarma" element={<SinglePorject />} />
+              <Route path="/useoLive/projects" element={<Projects />} />
+              <Route path="/useoLive/contact" element={<Contact />} />
+              <Route path="/useoLive/projects/fitFarma" element={<SinglePorject />} />
 
-              <Route path="*" element={<NotFound />} />
+              <Route path="/useoLive/*" element={<NotFound />} />
             </Routes>
         </AnimatePresence>
         <Footer />
