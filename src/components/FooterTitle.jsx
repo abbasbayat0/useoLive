@@ -40,7 +40,7 @@ const FooterTitle = () => {
         animate={animation}
         src={require("../assets/smile.png")}
         alt="USEO"
-        className="absolute top-6 375:left-5 sm:left-14 sm:w-10 sm:top-5 md:w-8 md:left-96 900:left-[500px] lg:left-[600px] 1100:left-[700px] xl:left-[800px]"
+        className="absolute top-6 375:left-5 sm:left-14 sm:w-10 sm:top-5 md:w-8 md:left-96 900:left-[500px] lg:left-[600px] 1100:left-[700px] xl:left-[800px] 1400:left-[900px] 2xl:left-[1000px]"
       />
       <motion.p
         ref={ref}
