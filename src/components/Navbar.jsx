@@ -34,7 +34,6 @@ const Navbar = () => {
         ></div>
       </div>
 
-
       {/* navbar contents */}
       <div
         className={`w-full h-screen absolute flex flex-col justify-center items-center gap-16 transition-all duration-500 sm:max-h-[60px] sm:shadow-md sm:bg-opacity-100 sm:translate-y-0 sm:opacity-100 sm:flex-row sm:items-start sm:justify-around md:max-h-[50px] lg:max-h-[60px] z-10 bg-white bg-opacity-95 ${
@@ -76,12 +75,12 @@ const Navbar = () => {
           </li>
           <li onClick={() => changeNavStatus(false)}>
             <Link to="/projects" className="cursor-pointer">
-              سایر
+              وبلاگ
             </Link>
           </li>
           <li onClick={() => changeNavStatus(false)}>
-            <Link to="/projects" className="cursor-pointer">
-              وبلاگ
+            <Link to="/contact" className="cursor-pointer">
+              تماس با ما
             </Link>
           </li>
         </ul>

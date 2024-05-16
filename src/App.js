@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import SinglePorject from "./pages/SingleProject";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/useoLive" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/projects/fitFarma" element={<SinglePorject />} />
 
               <Route path="*" element={<NotFound />} />
