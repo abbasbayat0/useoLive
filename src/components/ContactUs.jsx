@@ -11,7 +11,7 @@ const ContactUs = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
-        className="bg-[#B094CA] rounded-3xl p-10 shadow-md m-10 w-full sm:w-1/3 flex flex-col gap-8 sm:absolute z-10 sm:left-0 375:w-10/12 425:w-8/12 520:w-6/12 810:w-4/12 900:w-3/12 900:left-5 1100:left-14 xl:left-20 xl:w-72 1400:left-28"
+        className="bg-[#B094CA] rounded-3xl p-10 shadow-md m-10 w-full sm:w-1/3 flex flex-col gap-8 sm:absolute sm:z-10 sm:left-0 375:w-10/12 425:w-8/12 520:w-6/12 810:w-4/12 900:w-3/12 900:left-5 1100:left-14 xl:left-20 xl:w-72 1400:left-28"
       >
         <h3 className="text-center sm:text-end font-morabba font-bold tracking-wider text-white text-xl">
           تماس با ما
