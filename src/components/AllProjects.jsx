@@ -13,8 +13,8 @@ const AllProjects = () => {
       <div className="flex flex-col sm:flex-row-reverse justify-around">
         {/* logo & title */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
           className="flex flex-col gap-2 justify-center items-center sm:flex-row-reverse"
         >
@@ -102,7 +102,7 @@ const AllProjects = () => {
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: .8 + index * 0.5, delay: 1.5 }}
+              transition={{ duration: 0.8 + index * 0.5, delay: 1.5 }}
               className="w-full h-[400px] flex justify-center items-center relative sm:w-[40%] sm:mt-5 md:w-[33%] xl:mt-14 xl:w-[25%]"
               key={index}
             >
