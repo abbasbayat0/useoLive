@@ -1,12 +1,12 @@
-import { useEffect } from 'react';
-import ContactUs from '../components/ContactUs'
-import { motion, easeIn } from 'framer-motion';
+import { useEffect } from "react";
+import ContactUs from "../components/ContactUs";
+import { motion, easeIn } from "framer-motion";
 
 const Contact = () => {
   useEffect(() => {
-    setTimeout(() => {
+    return () => {
       window.scrollTo(0, 0);
-    }, 800);
+    };
   }, []);
   return (
     <motion.div
@@ -16,7 +16,7 @@ const Contact = () => {
     >
       <ContactUs />
     </motion.div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

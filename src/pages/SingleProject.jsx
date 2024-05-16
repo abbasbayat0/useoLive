@@ -9,9 +9,9 @@ const SinglePorject = () => {
     if (view) animation.start({ y: 0, opacity: 1 });
   }, [view]);
   useEffect(() => {
-    setTimeout(() => {
+    return () => {
       window.scrollTo(0, 0);
-    }, 800);
+    };
   }, []);
 
   return (

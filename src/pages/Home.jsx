@@ -5,9 +5,9 @@ import { easeIn, motion } from "framer-motion";
 
 const Home = () => {
   useEffect(() => {
-    setTimeout(() => {
+    return () => {
       window.scrollTo(0, 0);
-    }, 800);
+    };
   }, []);
   return (
     <motion.div
