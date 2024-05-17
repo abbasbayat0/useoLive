@@ -74,7 +74,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li onClick={() => changeNavStatus(false)}>
-            <Link to="/useoLive/projects" className="cursor-pointer">
+            <Link to="/useoLive/blog" className="cursor-pointer">
               وبلاگ
             </Link>
           </li>

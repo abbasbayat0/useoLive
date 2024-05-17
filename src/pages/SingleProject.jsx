@@ -19,7 +19,7 @@ const SinglePorject = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: easeIn }}
     >
-      <div className="w-full mt-20 px-2 flex flex-col justify-center sm:mt-24 md:mt-10 overflow-x-hidden">
+      <div className="w-full mt-20 px-2 flex flex-col justify-center sm:mt-24 md:mt-10 overflow-x-hidden sm:-mb-28">
         {/* poster & descriptions */}
         <div className="flex justify-center items-center flex-col md:flex-row-reverse">
           <div className="flex justify-center items-center md:w-2/3 md:-mr-8">

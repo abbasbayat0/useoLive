@@ -9,7 +9,7 @@ const AllProjects = () => {
   const [active, changeActive] = useState(0);
 
   return (
-    <div className="w-full mt-24 px-2 flex flex-col justify-center sm:mt-28">
+    <div className="w-full mt-24 px-2 flex flex-col justify-center sm:mt-28 sm:-mb-28">
       <div className="flex flex-col sm:flex-row-reverse justify-around">
         {/* logo & title */}
         <motion.div

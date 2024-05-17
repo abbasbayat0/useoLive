@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
+import Blog from "./pages/Blog";
 
 function App() {
   const location = useLocation();
@@ -28,8 +29,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/useoLive" element={<Home />} />
               <Route path="/useoLive/projects" element={<Projects />} />
-              <Route path="/useoLive/contact" element={<Contact />} />
               <Route path="/useoLive/projects/fitFarma" element={<SinglePorject />} />
+              <Route path="/useoLive/contact" element={<Contact />} />
+              <Route path="/useoLive/blog" element={<Blog />} />
 
               <Route path="/useoLive/*" element={<NotFound />} />
             </Routes>
