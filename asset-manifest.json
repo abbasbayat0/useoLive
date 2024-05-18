@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/useoLive/static/css/main.8e41bae9.css",
-    "main.js": "/useoLive/static/js/main.528b1796.js",
+    "main.css": "/useoLive/static/css/main.7a2c702f.css",
+    "main.js": "/useoLive/static/js/main.70a1a40d.js",
     "static/media/singlePoster.png": "/useoLive/static/media/singlePoster.12252b885b38b09ce964.png",
     "static/media/posterOne.png": "/useoLive/static/media/posterOne.865169912ec8a84f1005.png",
     "static/media/largeLaptop.png": "/useoLive/static/media/largeLaptop.ae0c8ec08746bfe1fda8.png",
     "static/media/posterTwo.png": "/useoLive/static/media/posterTwo.ee5dd2fb7b85bc0d9f1f.png",
     "static/media/mobileLaptop.png": "/useoLive/static/media/mobileLaptop.162d5397ae552f07de12.png",
+    "static/media/article.png": "/useoLive/static/media/article.3d38d174e2846351819d.png",
     "static/media/Sans.woff2": "/useoLive/static/media/Sans.231383e6bd8ef4d838d7.woff2",
     "static/media/phone.png": "/useoLive/static/media/phone.4e66c4cbca15cacd169c.png",
     "static/media/similar3.png": "/useoLive/static/media/similar3.515b46fc1e99a247a272.png",
@@ -20,11 +21,11 @@
     "static/media/exampleOne.png": "/useoLive/static/media/exampleOne.543ed3587c15f13a3899.png",
     "static/media/posterTwoBackDots.png": "/useoLive/static/media/posterTwoBackDots.9972b486aedc0837e267.png",
     "index.html": "/useoLive/index.html",
-    "main.8e41bae9.css.map": "/useoLive/static/css/main.8e41bae9.css.map",
-    "main.528b1796.js.map": "/useoLive/static/js/main.528b1796.js.map"
+    "main.7a2c702f.css.map": "/useoLive/static/css/main.7a2c702f.css.map",
+    "main.70a1a40d.js.map": "/useoLive/static/js/main.70a1a40d.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e41bae9.css",
-    "static/js/main.528b1796.js"
+    "static/css/main.7a2c702f.css",
+    "static/js/main.70a1a40d.js"
   ]
 }
