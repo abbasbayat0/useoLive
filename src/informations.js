@@ -150,6 +150,52 @@ const projects = [
   },
 ];
 
+// Blog.jsx
+const articles = [
+  {
+    image: require("./assets/article.png"),
+    date: "1403/02/30",
+    title: "توضیحات کلی در این قسمت است",
+    description: "توضیحات جزئی تر در این قسمت قرار خواهند گرفت همچنین این بخش می تواند شامل قسمتی از مقاله باشد",
+    publisher: "عباس بیات",
+  },
+  {
+    image: require("./assets/article.png"),
+    date: "1403/02/30",
+    title: "توضیحات کلی در این قسمت است",
+    description: "توضیحات جزئی تر در این قسمت قرار خواهند گرفت همچنین این بخش می تواند شامل قسمتی از مقاله باشد",
+    publisher: "عباس بیات",
+  },
+  {
+    image: require("./assets/article.png"),
+    date: "1403/02/30",
+    title: "توضیحات کلی در این قسمت است",
+    description: "توضیحات جزئی تر در این قسمت قرار خواهند گرفت همچنین این بخش می تواند شامل قسمتی از مقاله باشد",
+    publisher: "عباس بیات",
+  },
+  {
+    image: require("./assets/article.png"),
+    date: "1403/02/30",
+    title: "توضیحات کلی در این قسمت است",
+    description: "توضیحات جزئی تر در این قسمت قرار خواهند گرفت همچنین این بخش می تواند شامل قسمتی از مقاله باشد",
+    publisher: "عباس بیات",
+  },
+  {
+    image: require("./assets/article.png"),
+    date: "1403/02/30",
+    title: "توضیحات کلی در این قسمت است",
+    description: "توضیحات جزئی تر در این قسمت قرار خواهند گرفت همچنین این بخش می تواند شامل قسمتی از مقاله باشد",
+    publisher: "عباس بیات",
+  },
+  {
+    image: require("./assets/article.png"),
+    date: "1403/02/30",
+    title: "توضیحات کلی در این قسمت است",
+    description: "توضیحات جزئی تر در این قسمت قرار خواهند گرفت همچنین این بخش می تواند شامل قسمتی از مقاله باشد",
+    publisher: "عباس بیات",
+  },
+];
+
 export const information = {
   options,
   examples,
@@ -157,4 +203,5 @@ export const information = {
   services,
   content,
   projects,
+  articles,
 };
