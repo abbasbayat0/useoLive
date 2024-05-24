@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/useoLive/static/css/main.ce77b771.css",
-    "main.js": "/useoLive/static/js/main.b0eb49a0.js",
+    "main.css": "/useoLive/static/css/main.875c8f95.css",
+    "main.js": "/useoLive/static/js/main.b4bf306f.js",
     "static/media/singlePoster.png": "/useoLive/static/media/singlePoster.12252b885b38b09ce964.png",
     "static/media/posterOne.png": "/useoLive/static/media/posterOne.865169912ec8a84f1005.png",
     "static/media/largeLaptop.png": "/useoLive/static/media/largeLaptop.ae0c8ec08746bfe1fda8.png",
@@ -21,11 +21,11 @@
     "static/media/exampleOne.png": "/useoLive/static/media/exampleOne.543ed3587c15f13a3899.png",
     "static/media/posterTwoBackDots.png": "/useoLive/static/media/posterTwoBackDots.9972b486aedc0837e267.png",
     "index.html": "/useoLive/index.html",
-    "main.ce77b771.css.map": "/useoLive/static/css/main.ce77b771.css.map",
-    "main.b0eb49a0.js.map": "/useoLive/static/js/main.b0eb49a0.js.map"
+    "main.875c8f95.css.map": "/useoLive/static/css/main.875c8f95.css.map",
+    "main.b4bf306f.js.map": "/useoLive/static/js/main.b4bf306f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce77b771.css",
-    "static/js/main.b0eb49a0.js"
+    "static/css/main.875c8f95.css",
+    "static/js/main.b4bf306f.js"
   ]
 }
