@@ -10,8 +10,8 @@ const Contact = () => {
   }, []);
   return (
     <motion.div
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.8, ease: easeIn }}
+    exit={{ opacity: 0, x: -2000 }}
+    transition={{ duration: 0.8, ease: easeIn }}
       className="flex flex-col justify-center items-center"
     >
       <ContactUs />

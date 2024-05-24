@@ -10,7 +10,7 @@ const Projects = () => {
   }, []);
   return (
     <motion.div
-      exit={{ opacity: 0 }}
+      exit={{ opacity: 0, x: -2000 }}
       transition={{ duration: 0.8, ease: easeIn }}
     >
       <AllProjects />

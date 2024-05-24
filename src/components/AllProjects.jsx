@@ -4,34 +4,33 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const AllProjects = () => {
-  const projects = information.projects;
   const [filter, changeFilter] = useState("همه");
   const [active, changeActive] = useState(0);
+  const projects = information.projects.filter((project) =>
+    project.show.includes(filter)
+  );
 
   return (
-    <div className="w-full mt-24 px-2 flex flex-col justify-center sm:mt-28 sm:-mb-28">
+    <motion.div
+      initial={{ opacity: 0, x: 2000 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, delay: 0 }}
+      className="w-screen max-w-[1536px] mt-24 px-2 flex flex-col justify-center sm:mt-28 sm:-mb-28"
+    >
       <div className="flex flex-col sm:flex-row-reverse justify-around">
         {/* logo & title */}
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="flex flex-col gap-2 justify-center items-center sm:flex-row-reverse"
-        >
+        <div className="flex flex-col gap-2 justify-center items-center sm:flex-row-reverse">
           <div className="rounded-2xl w-10 h-10 bg-green-400 bg-opacity-40 flex justify-center items-center">
             <img src={require("../assets/projects.png")} alt="USEO" />
           </div>
           <h1 className="font-morabba text-xl tracking-wide font-bold opacity-90 lg:text-2xl">
             پروژه های اجرایی تیم یوسئو
           </h1>
-        </motion.div>
+        </div>
 
         {/* filters */}
         <div className="flex flex-col gap-5 justify-center items-center mt-10 sm:mt-0 sm:gap-1 sm:flex-row-reverse">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 3 }}
+          <div
             onClick={() => {
               changeFilter("همه");
               changeActive(0);
@@ -43,11 +42,8 @@ const AllProjects = () => {
             }`}
           >
             همه
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 3.2 }}
+          </div>
+          <div
             onClick={() => {
               changeFilter("UI طراحی");
               changeActive(1);
@@ -59,11 +55,8 @@ const AllProjects = () => {
             }`}
           >
             UI طراحی
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 3.4 }}
+          </div>
+          <div
             onClick={() => {
               changeFilter("وردپرس");
               changeActive(2);
@@ -75,11 +68,8 @@ const AllProjects = () => {
             }`}
           >
             طراحی های وردپرس
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 3.6 }}
+          </div>
+          <div
             onClick={() => {
               changeFilter("کدنویسی");
               changeActive(3);
@@ -91,7 +81,7 @@ const AllProjects = () => {
             }`}
           >
             طراحی کدنویسی
-          </motion.div>
+          </div>
         </div>
       </div>
 
@@ -99,9 +89,7 @@ const AllProjects = () => {
       <div className="w-full mt-5 flex flex-col gap-5 sm:flex-row flex-wrap sm:justify-around md:gap-0 1400:mt-20">
         {projects.map((project, index) => {
           return (
-            <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+            <div
               transition={{ duration: 0.8 + index * 0.5, delay: 1.5 }}
               className="w-full h-[400px] flex justify-center items-center relative sm:w-[40%] sm:mt-5 md:w-[33%] xl:mt-14 xl:w-[25%]"
               key={index}
@@ -143,11 +131,11 @@ const AllProjects = () => {
                   </Link>
                 </div>
               </div>
-            </motion.div>
+            </div>
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
