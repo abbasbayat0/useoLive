@@ -26,7 +26,7 @@ const PosterTwo = () => {
 
   useEffect(() => {
     if (view) animation.start({ y: 0, opacity: 1 });
-  }, [view]);
+  }, [view, animation]);
 
   return (
     <div ref={ref} className="w-full h-[600px] flex flex-col items-end 375:mt-10 sm:h-[700px] md:relative md:h-[350px] md:mt-5 xl:pr-10">

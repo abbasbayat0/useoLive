@@ -12,7 +12,7 @@ const FooterContent = () => {
   const animation = useAnimation();
   useEffect(() => {
     if (view) animation.start({ x: 0, opacity: 1 });
-  }, [view]);
+  }, [view, animation]);
 
   return (
     <motion.div

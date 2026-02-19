@@ -8,7 +8,7 @@ const TheEndOfFooter = () => {
 
   useEffect(() => {
     if (view) animation.start({ y: 0, x: 0, opacity: 1 });
-  }, [view]);
+  }, [view, animation]);
   return (
     <div
       ref={ref}
