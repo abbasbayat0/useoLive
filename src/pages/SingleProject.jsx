@@ -7,12 +7,12 @@ const SinglePorject = () => {
   const animation = useAnimation();
   useEffect(() => {
     if (view) animation.start({ y: 0, opacity: 1 });
-  }, [view]);
+  }, [view, animation]);
   useEffect(() => {
     return () => {
       window.scrollTo(0, 0);
     };
-  }, [animation]);
+  }, []);
 
   return (
     <motion.div
